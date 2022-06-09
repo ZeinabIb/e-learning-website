@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    
+    <link href="style.css" rel="stylesheet" />
+    <link href="style2.css" rel="stylesheet" />
+    <title>Courses</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo5.png" />
+        <nav class="navbar">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Events</a>
+              <div class="dropdown-content">
+                <a href="#">Event for Buisness Students</a>
+                <a href="#">Event for Engineering Students</a>
+                <a href="#">Event for Art Students</a>
+              </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="register.html" target="_blank"><button id="btn">register</button></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="title-team">
+      <h1>Courses & Our Team</h1>
+    </div>
+
+
+    <div class="team">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/team5.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Alice</h1> 
+      <p>Phd in Programming </p> 
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/team9.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>John Doe</h1> 
+      <p>Architect & Engineer</p> 
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/team2.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Akira</h1> 
+      <p>Web design</p> 
+      <p>From korean</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+ 
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+      txtValue = a[i].textContent || a[i].innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        a[i].style.display = "";
+      } else {
+        a[i].style.display = "none";
+      }
+    }
+  }
+  </script>
+  
+  <div class="search-dropdown">
+    <button onclick="myFunction()" class="dropbtn">Search For Courses...</button>
+    <div id="myDropdown" class="dropdown-contents">
+      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+      <a href="#">Web design</a>
+      <a href="#">Programming</a>
+      <a href="#">Cyber Security</a>
+      <a href="#">C++</a>
+      <a href="#">Java</a>
+    </div>
+  </div>
+
+<section class="courses" >
+  
+ 
+
+<div class="row" >
+  <div class="column">
+    <ul class="for-courses" >
+      <h1 >Web Design Course &nbsp;&nbsp;&nbsp;&nbsp;<br>100$</h1>
+      <img id="course-image"  src="img/c4.jpg" >
+      <button>Get Now</button>
+    </ul>
+  </div>
+  <div class="column">
+  <ul class="for-courses" >
+    <h1>Cyber Security Course &nbsp;&nbsp;&nbsp;&nbsp;<br>200$</h1>
+    <img id="course-image"   src="img/c5.jpg" >
+    <button>Get Now</button>
+  </ul>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="row">
+    <div class="column">
+      <ul  class="for-courses">
+        <h1>C++ Course &nbsp;&nbsp;&nbsp;&nbsp;<br>250$</h1>
+        <img id="course-image"  src="img/c6.jpg" >
+        <button>Get Now</button>
+      </ul>
+    </div>
+    <div class="column">
+      <ul  class="for-courses">
+        <h1>Python Course &nbsp;&nbsp;&nbsp;&nbsp;<br>170$</h1>
+        <img id="course-image"  src="img/c7.jpg" >
+        <button>Get Now</button>
+      </ul>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <button onclick="Show()" id="more-courses">Show more courses</button>
+  <Br><br><br><br>
+  <div class="row" id="extra-course" onclick="Show()">
+      <div class="column">
+        <ul class="for-courses">
+          <h1>Data Base Course &nbsp;&nbsp;&nbsp;&nbsp;<br>200$</h1>
+          <img src="img/c8.jpg" >
+          <button>Get Now</button>
+        </ul>
+      </div>
+      <div class="column">
+      <ul class="for-courses">
+        <h1>Computer Architecture Course &nbsp;&nbsp;&nbsp;&nbsp;<br>100$</h1>
+        <img src="img/c9.jpg" >
+        <button>Get Now</button>
+      </ul>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="row" id="extra-course" onclick="Show()">
+        <div class="column">
+          <ul class="for-courses">
+            <h1>C++ Course &nbsp;&nbsp;&nbsp;&nbsp;<br>250$</h1>
+            <img src="img/c6.jpg">
+            <button>Get Now</button>
+          </ul>
+        </div>
+        <div class="column">
+          <ul>
+            <h1>Python Course &nbsp;&nbsp;&nbsp;&nbsp;<br>170$</h1>
+            <img src="img/c7.jpg" >
+            <button>Get Now</button>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <br>
+      
+  <script>
+  function Show(){
+    var x = document.getElementById("extra-course");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+  </section>
+<br><br><br><br><br><br><br>
+    <div class="footer-content">
+      <footer>
+      <h3>E-Learning</h3>
+      <p>Connecting, inspiring, and guiding students in Information Technology and Business education is our mission.</p>
+      <ul class="socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+     </ul>
+    
+    </div>
+  </footer>
+  </body>
+</html>

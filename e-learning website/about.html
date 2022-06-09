@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link href="style.css" rel="stylesheet" />
+    <link href="style2.css" rel="stylesheet" />
+    <title>About</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo5.png" />
+        <nav class="navbar">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Events</a>
+              <div class="dropdown-content">
+                <a href="#">Event for Buisness Students</a>
+                <a href="#">Event for Engineering Students</a>
+                <a href="#">Event for Art Students</a>
+              </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="register.html" target="_blank"><button id="btn">register</button></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="title">
+      <ul>
+      <h1>Discover more about E-Learning</h1>
+      <h2>Watch the video below</h2>
+    </ul>
+    </div>
+     
+    <div class="video"> 
+      <iframe class="video-content" src="https://www.youtube.com/embed/ZPs3URGs0KQ"></iframe>
+    </div>
+
+    <script src="javaScript.js"></script>
+   <div class="about">
+    <div class="prices">
+    <div class="columns">
+      <ul class="price">
+        <li class="header">Basic</li>
+        <li class="grey">$ 9.99 / year</li>
+        <li>10GB Storage</li>
+        <li>10 Emails</li>
+        <li class="grey"><a href="javascript:myFunction();" class="button" onclick="SignUp()">Sign Up</a></li>
+      </ul>
+    </div>
+    
+    <div class="columns">
+      <ul class="price">
+        <li class="header" style="background-color: rgb(44, 122, 255);">Pro</li>
+        <li class="grey">$ 24.99 / year</li>
+        <li>25GB Storage</li>
+        <li>25 Emails</li>
+        <li class="grey"><a href="javascript:myFunction();" class="button" onclick="SignUp()">Sign Up</a></li>
+      </ul>
+    </div>
+    
+    <div class="columns">
+      <ul class="price">
+        <li class="header">Premium</li>
+        <li class="grey">$ 49.99 / year</li>
+        <li>50GB Storage</li>
+        <li>50 Emails</li>
+        <li class="grey"><a href="javascript:myFunction();" class="button" onclick="SignUp()">Sign Up</a></li>
+      </ul>
+    </div>
+
+  </div>
+   </div>
+  </div>
+
+
+   <script>
+    function SignUp()
+    {
+      var person = prompt("Please enter your name" , "");
+      var password = prompt("Please Enter Your e-learning password", "")
+    }
+    </script>
+
+    <script>
+      function myFunction() {
+     alert("Sign Up Succefully!");
+      }
+    </script>
+
+
+ 
+    <div class="footer-content">
+      <footer>
+      <h3>E-Learning</h3>
+      <p>Connecting, inspiring, and guiding students in Information Technology and Business education is our mission.</p>
+      <ul class="socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+     </ul>
+    
+    </div>
+  </footer>
+  </body>
+</html>
